@@ -1,8 +1,5 @@
 var jackrabbit = require('jackrabbit');
-var db = {
-  1: 32,
-  2: 4
-};
+var db = require('./db');
 
 var rabbit = jackrabbit(process.env.CLOUDAMQP_URL);
 var exchange = rabbit.default();
